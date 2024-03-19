@@ -4,17 +4,41 @@
     <meta charset="utf-8" />
     <title>Admin Dashboard</title>
     <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <div class="status-bar">
-        <i class="search-icon"></i>
-        <input type="search" />
-        <i class="notifications"></i>
-        <img alt="user-icon" />
-        <p>User name</p>
+        <div class="search-wrapper">
+          <img
+            class="status-bar-icon"
+            src="./images/magnify.svg"
+            alt="magnifying glass"
+          />
+          <input type="search" id="search-bar" />
+        </div>
+        <div class="user-wrapper">
+          <img class="status-bar-icon" src="./images/bell-ring.svg" />
+          <img src="./images/man.png" class="status-avatar" />
+
+          <p class="status-username">Joel Warburton</p>
+        </div>
+      </div>
+      <div class="header-grid">
+        <img class="grid-icon" src="./images/man.png" />
+        <p class="greeting">Hello there,</p>
+        <p class="grid-username">Joel Warburton (@Joel)</p>
+        <input type="button" value="New" />
+        <input type="button" value="Upload" />
+        <input type="button" value="Share" />
       </div>
     </header>
+
     <div class="sidebar">
       <div class="sidebar-header">
         <img class="dash-logo" src="./images/view-dashboard.svg" />
@@ -30,7 +54,7 @@
         <li class="spacer"></li>
         <li><img src="./images/cog.svg" />Settings</li>
         <li><img src="./images/lifebuoy.svg" />Support</li>
-        <li><img src="./images/shield-lock.svg"></img>Privacy</li>
+        <li><img src="./images/shield-lock.svg" />Privacy</li>
       </ul>
     </div>
     <div class="main-content">
@@ -40,3 +64,7 @@
     </div>
   </body>
 </html>
+
+<a href="https://www.flaticon.com/free-icons/avatar" title="avatar icons"
+  >Avatar icons created by Freepik - Flaticon</a
+>
