@@ -51,8 +51,8 @@ header {
   display: grid;
   list-style: none;
   padding: 3px;
-  grid-template-rows: repeat(12, auto);
-  gap: 20px;
+  grid-template-rows: repeat(12, 1fr);
+  gap: 10px;
 }
 
 .sidebar ul li {
@@ -60,7 +60,7 @@ header {
   align-items: center;
   gap: 20px;
   /*font-family: Arial, Helvetica, sans-serif;*/
-  font-size: clamp(1rem, 2vw, 22px);
+  font-size: clamp(1rem, 2vw, 20px);
   font-weight: 500;
 }
 
@@ -119,10 +119,10 @@ header {
 
 .header-grid {
   display: grid;
-  grid-template-columns: 75px 3fr repeat(3, 100px);
+  grid-template-columns: 75px minmax(150px, 3fr) repeat(3, minmax(75px, 100px));
   grid-template-rows: 1fr 1fr;
   grid-auto-flow: column;
-  column-gap: 20px;
+  column-gap: 15px;
   font-weight: 700;
   align-items: center;
   margin: 15px 0;
@@ -130,7 +130,7 @@ header {
 
 .grid-icon {
   grid-row: 1/3;
-  width: 75px;
+  width: 65px;
   height: auto;
 }
 
@@ -154,9 +154,10 @@ header {
   align-self: center;
   background: #772dbd;
   color: #fff;
-  padding: 8px 15px;
+  padding: 5px 16px;
   border: none;
   border-radius: 20px;
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
+  max-width: 100px;
 }
