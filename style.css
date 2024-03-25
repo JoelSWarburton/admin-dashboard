@@ -64,11 +64,6 @@ header {
   grid-row: 7/9;
 }
 
-card-icon:hover {
-  background-color: #bbb;
-  border-radius: 5px;
-}
-
 .sidebar ul li img {
   width: 1em;
   filter: invert();
@@ -84,6 +79,7 @@ card-icon:hover {
 .status-bar-icon {
   width: 25px;
   height: auto;
+  margin-top: 4px;
 }
 
 .status-avatar {
@@ -212,7 +208,7 @@ card-icon:hover {
 .card-icon {
   width: auto;
   height: 1.5rem;
-  padding: 0 8px;
+  padding:  5px;
 }
 
 .project-desc {
@@ -226,7 +222,7 @@ card-icon:hover {
 .announcements-card {
   display: grid;
   align-items: center;
-  gap: 16px;
+  
 }
 
 .card {
@@ -238,6 +234,7 @@ card-icon:hover {
 
 .announcement-post:not(:last-child) {
   border-bottom: solid 1px black;
+  padding-bottom: 16px;
 }
 
 .announce-title {
@@ -253,7 +250,7 @@ card-icon:hover {
 
 .trending-card {
   display: grid;
-  gap: 25px;
+  gap: 15px;
 }
 
 .profile {
@@ -262,6 +259,7 @@ card-icon:hover {
   grid-template-rows: auto;
   align-items: center;
   column-gap: 15px;
+  padding: 8px;
 }
 
 .profile-image {
@@ -289,7 +287,20 @@ card-icon:hover {
   box-shadow: inset 5px 0 green, 5px 5px 5px rgba(100, 100, 100, 0.6);
 }
 
+.card-icon:hover, .profile:hover {
+    background: #ddd;
+  border-radius: 5px;
+}
+
 .header-grid input[type="button"]:hover {
   background-color: #9052ca;
   box-shadow: 2px 2px 2px rgba(200, 200, 200);
+}
+
+#search-bar:hover {
+  border: 1px solid #333;
+}
+
+.announcement-post:hover {
+  background: #ddd;
 }
